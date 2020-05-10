@@ -8,7 +8,11 @@
 ## 软件原理
 
 使用防火墙禁止炉石传说进程的数据上行，然后再允许。
+
 拔线：
+
 netsh advfirewall firewall set rule name="lushi" new enable=yes
+
 重连：
+
 netsh advfirewall firewall set rule name="lushi" new enable=no
