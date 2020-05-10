@@ -10,3 +10,6 @@ D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\炉石一键拔线.vbpr
 D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\炉石一键拔线.exe
 D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\炉石一键拔线.xml
 D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\炉石一键拔线.pdb
+D:\bc\vb\炉石一键拔线\炉石一键拔线\bin\Debug\byn-ER\炉石一键拔线.resources.dll
+D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\炉石一键拔线.Form1.byn-ER.resources
+D:\bc\vb\炉石一键拔线\炉石一键拔线\obj\Debug\byn-ER\炉石一键拔线.resources.dll
