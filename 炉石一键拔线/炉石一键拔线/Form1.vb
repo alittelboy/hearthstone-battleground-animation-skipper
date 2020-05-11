@@ -29,7 +29,7 @@ Public Class Form1
         Dim Swriter As New StreamWriter(rootdir & "setup.bat", False) '覆盖或新建
         Swriter.WriteLine(setuptxt)
         Swriter.Close()
-        Shell("setup.bat", vbHidden)
+        Shell(rootdir & "setup.bat", vbHidden)
         MsgBox("初始化完成！")
     End Sub
 
@@ -38,14 +38,20 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim oShell
-        oShell = CreateObject("WScript.Shell")
-        rootdir = oShell.ExpandEnvironmentStrings("%APPDATA%")
-        'MsgBox(rootdir)
-        If Not Directory.Exists(rootdir & "\HSunplugging") Then
-            Directory.CreateDirectory(rootdir & "\HSunplugging")
-        End If
-        rootdir = rootdir & "\HSunplugging\"
+        Try
+            Dim oShell
+            oShell = CreateObject("WScript.Shell")
+            rootdir = oShell.ExpandEnvironmentStrings("%APPDATA%")
+            'MsgBox(rootdir)
+            If Not Directory.Exists(rootdir & "\HSunplugging") Then
+                Directory.CreateDirectory(rootdir & "\HSunplugging")
+            End If
+            rootdir = rootdir & "\HSunplugging\"
+            'MsgBox(rootdir)
+        Catch ex As Exception
+            rootdir = ""
+        End Try
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -86,5 +92,9 @@ Public Class Form1
             Shell(rootdir & "block.bat", vbHidden)
             Timer1.Enabled = True
         End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
+        rootdir = ""
     End Sub
 End Class
