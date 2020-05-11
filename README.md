@@ -1,6 +1,9 @@
 # hearthstone-battleground-animation-skipper
 跳过炉石传说酒馆战棋的动画，实现快速“拔线”的效果。使用快捷键操作
+
 快捷键：qwer
+
+修复了一个路径错误的bug
 
 ## 使用语言：vb.net
 
