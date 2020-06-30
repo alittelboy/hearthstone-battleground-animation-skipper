@@ -5,17 +5,18 @@
 
 相关说明：https://www.iyingdi.com/web/bbspost/detail/2250016
 
-链接：https://pan.baidu.com/s/1whNp1QAgfRmekwCwh9zZHA 
+链接：https://pan.baidu.com/s/10HKIwMWHi7lOiOeE7hw4fg 
 
-提取码：7kuf
+提取码：kpmb
 
 
 ## 2020.6.30更新
 
- - 取消了3s 的等待时间
+ - 取消了3s 的等待时间，改为自己设定
  - 把脚本目录放在运行目录，避免某些网吧电脑没有系统盘。
  - 增加背景图和部分异常说明，减少人工工作量。
  - 增加了本网址的引导，使大家遇到问题可以自行解决。
+ - 现在，“炉石传说地址”和“时延设定”都本地化存储了，也就是说再次打开内容相同。其中，地址必须点击初始化才会存储到本地，时延只要修改内容就存储到本地。
 
 ## 使用语言：vb.net
 
