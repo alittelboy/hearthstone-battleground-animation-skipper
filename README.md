@@ -3,7 +3,7 @@
 
 快捷键：qwer
 
-修复了一个路径错误的bug
+相关说明：https://www.iyingdi.com/web/bbspost/detail/2250016
 
 ## 2020.6.30更新
 
