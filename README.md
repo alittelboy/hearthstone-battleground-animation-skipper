@@ -53,6 +53,9 @@ netsh advfirewall firewall set rule name="lushi" new enable=no
  5.流程走完还是不行？
 
  直接下载bat文件，修改地址，然后手动拔线。
+ 
  下载项目中的HSunplugging.zip，并解压，右键setup.bat编辑，修改setup.bat里面的炉石安装地址，然后双击运行setup初始化。
+ 
  双击block拔线，双击connect链接。
+ 
  如果这种办法还不行，说明你上述流程没有走完。
