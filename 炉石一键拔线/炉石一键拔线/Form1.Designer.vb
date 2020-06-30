@@ -33,6 +33,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.copyurl = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -67,25 +69,41 @@ Partial Class Form1
         'Label1
         '
         resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Name = "Label1"
         '
         'Label2
         '
         resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Name = "Label2"
         '
         'Timer1
         '
-        Me.Timer1.Interval = 3000
+        Me.Timer1.Interval = 10
         '
         'Timer2
         '
         Me.Timer2.Enabled = True
         '
+        'copyurl
+        '
+        resources.ApplyResources(Me.copyurl, "copyurl")
+        Me.copyurl.Name = "copyurl"
+        Me.copyurl.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Name = "Label4"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.copyurl)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button4)
@@ -108,4 +126,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+    Friend WithEvents copyurl As Button
+    Friend WithEvents Label4 As Label
 End Class

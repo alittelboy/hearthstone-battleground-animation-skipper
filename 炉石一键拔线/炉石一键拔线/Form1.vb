@@ -39,11 +39,13 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim oShell
-            oShell = CreateObject("WScript.Shell")
-            rootdir = oShell.ExpandEnvironmentStrings("%APPDATA%")
+            'Dim oShell
+            'oShell = CreateObject("WScript.Shell")
+            'rootdir = oShell.ExpandEnvironmentStrings("%APPDATA%")
+            rootdir = System.Environment.CurrentDirectory
             'MsgBox(rootdir)
             If Not Directory.Exists(rootdir & "\HSunplugging") Then
+                'MsgBox(rootdir & "\HSunplugging")
                 Directory.CreateDirectory(rootdir & "\HSunplugging")
             End If
             rootdir = rootdir & "\HSunplugging\"
@@ -96,5 +98,20 @@ Public Class Form1
 
     Private Sub Button5_Click(sender As Object, e As EventArgs)
         rootdir = ""
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub copyurl_Click(sender As Object, e As EventArgs) Handles copyurl.Click
+
+        Clipboard.Clear()
+        Clipboard.SetText("github.com/alittelboy/hearthstone-battleground-animation-skipper")
+        MsgBox("网址已经复制到剪切板！")
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class
