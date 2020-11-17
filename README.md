@@ -43,6 +43,8 @@ netsh advfirewall firewall set rule name="lushi" new enable=no
  - 确认是否开启了防火墙，没有开启请开启
  - 请勿和vpn或者代理同时使用，可能会导致软件无效
  - 运行时跳出黑框是正常现象，跳出Windows提示授权是异常现象，自行百度更改安全等级
+ - 建议关闭杀毒软件
+ - 有些电脑会出现乱码导致的无效，建议看下面第5条
  
  2.什么是炉石传说的安装位置
  
@@ -58,7 +60,11 @@ netsh advfirewall firewall set rule name="lushi" new enable=no
  
  https://www.baidu.com/baidu?wd=%E6%80%8E%E4%B9%88%E6%9B%B4%E6%94%B9Windows%E5%AE%89%E5%85%A8%E7%AD%89%E7%BA%A7
  
- 5.流程走完还是不行？
+ 5.还是不行？
+ 有些电脑会出现乱码问题。
+ 打开设置-防火墙-高级选项-出站规则-lushi-有个选项可以查看炉石的地址，手动设置一下，即可解决。
+ 
+ 6.流程走完还是不行？
 
  直接下载bat文件，修改地址，然后手动拔线。
  
