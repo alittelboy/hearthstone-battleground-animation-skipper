@@ -64,12 +64,4 @@ netsh advfirewall firewall set rule name="lushi" new enable=no
  有些电脑会出现乱码问题。
  打开设置-防火墙-高级选项-出站规则-lushi-有个选项可以查看炉石的地址，手动设置一下，即可解决。
  
- 6.流程走完还是不行？
 
- 直接下载bat文件，修改地址，然后手动拔线。
- 
- 下载项目中的HSunplugging.zip，并解压，右键setup.bat编辑，修改setup.bat里面的炉石安装地址，然后双击运行setup初始化。
- 
- 双击block拔线，双击connect链接。
- 
- 如果这种办法还不行，说明你上述流程没有走完。
